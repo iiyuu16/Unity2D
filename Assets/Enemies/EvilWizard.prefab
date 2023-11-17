@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 386149077257741619}
   - component: {fileID: 1383540285801261432}
   - component: {fileID: 4430334604493681213}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EvilWizard
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,7 +198,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   speed: 2
-  changeTime: 3
   _hp: 20
   _targetable: 1
 --- !u!61 &1383540285801261432

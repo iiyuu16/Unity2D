@@ -5,10 +5,10 @@ using UnityEngine;
 
 public interface IDamageable
 {
-
     public int Health { get; set; }
     public bool Targetable { set; get; }
     public void OnHit(int damage);
-
+    public void Die();
+    public IEnumerator DeactivateAfterDelay(float delay);
     public void OnObjectDestroyed();
 }

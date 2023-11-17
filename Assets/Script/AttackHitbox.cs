@@ -8,6 +8,7 @@ public class AttackHitbox : MonoBehaviour
 {
     public Vector3 attkPosition;
     public Vector2 boxRange;
+
     // Start is called before the first frame update
     public void AttackAtPlayer()
     {
@@ -25,7 +26,7 @@ public class AttackHitbox : MonoBehaviour
         }
     }
 
-    public void AttackAtEnemy()
+public void AttackAtEnemy()
     {
         float facingDirection = Mathf.Sign(transform.localScale.x);
         Vector3 facingOffset = new Vector3(attkPosition.x * facingDirection, attkPosition.y, attkPosition.z);
@@ -34,9 +35,13 @@ public class AttackHitbox : MonoBehaviour
 
         foreach (Collider2D collision in collider)
         {
-            if (collision.GetComponent<EnemyController>())
+            if (collision.GetComponent<EnemyControllerMelee>())
             {
-                collision.GetComponent<EnemyController>().OnHit(1);
+                collision.GetComponent<EnemyControllerMelee>().OnHit(1);
+            }
+            else if (collision.GetComponent<EnemyControllerRanged>())
+            {
+                collision.GetComponent<EnemyControllerRanged>().OnHit(1);
             }
         }
     }

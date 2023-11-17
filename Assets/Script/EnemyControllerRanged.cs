@@ -1,24 +1,24 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Data;
 using UnityEngine;
 
-public class DamageableCharacter : MonoBehaviour
+public class EnemyControllerRanged : MonoBehaviour
 {
     public int damage;
     public float speed;
-    public float changeTime = 3.0f;
     private Animator animator;
     public int _hp;
     Rigidbody2D rigidbody2d;
     float timer;
     int direction;
 
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        timer = changeTime;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
     void Update()
@@ -28,16 +28,14 @@ public class DamageableCharacter : MonoBehaviour
         if (timer < 0)
         {
             direction = -direction;
-            timer = changeTime;
         }
+
     }
 
     void FixedUpdate()
     {
         Vector2 position = rigidbody2d.position;
-
         position.x = position.x + Time.deltaTime * speed * direction;
-
         rigidbody2d.MovePosition(position);
     }
 
@@ -48,9 +46,6 @@ public class DamageableCharacter : MonoBehaviour
             if (value < _hp)
             {
                 animator.SetTrigger("Hit");
-
-                //check hp
-                Debug.Log(Health);
 
             }
 
