@@ -11,7 +11,7 @@ public class DMGZone : MonoBehaviour
 
         if (player != null)
         {
-            player.changeHP(-1);
+            player.changeHP(1);
         }
     }
 }

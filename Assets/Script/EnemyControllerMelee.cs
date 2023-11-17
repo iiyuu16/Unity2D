@@ -1,26 +1,24 @@
-using Cainos.PixelArtTopDown_Basic;
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour , IDamageable
+public class EnemyControllerMelee : MonoBehaviour
 {
     public int damage;
     public float speed;
-    public float changeTime = 3.0f;
     private Animator animator;
     public int _hp;
-
     Rigidbody2D rigidbody2d;
     float timer;
     int direction;
+
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        timer = changeTime;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
     void Update()
@@ -30,26 +28,14 @@ public class EnemyController : MonoBehaviour , IDamageable
         if (timer < 0)
         {
             direction = -direction;
-            timer = changeTime;
         }
     }
 
     void FixedUpdate()
     {
         Vector2 position = rigidbody2d.position;
-
         position.x = position.x + Time.deltaTime * speed * direction;
-
         rigidbody2d.MovePosition(position);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        TopDownCharacterController player = collision.collider.gameObject.GetComponent<TopDownCharacterController>();
-        if (player != null)
-        {
-            player.changeHP(damage);
-        }
     }
 
     public int Health
@@ -59,9 +45,6 @@ public class EnemyController : MonoBehaviour , IDamageable
             if (value < _hp)
             {
                 animator.SetTrigger("Hit");
-
-                //check hp
-                Debug.Log(Health);
 
             }
 
@@ -73,14 +56,15 @@ public class EnemyController : MonoBehaviour , IDamageable
                 Targetable = false;
             }
         }
-        get 
-        { 
-            return _hp; 
+        get
+        {
+            return _hp;
         }
     }
-
-    public bool Targetable { get { return _targetable; }
-        set 
+    public bool Targetable
+    {
+        get { return _targetable; }
+        set
         {
             _targetable = value;
             rigidbody2d.simulated = value;
@@ -88,12 +72,23 @@ public class EnemyController : MonoBehaviour , IDamageable
     }
     public bool _targetable = true;
 
+
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        TopDownCharacterController player = collision.collider.gameObject.GetComponent<TopDownCharacterController>();
+        if (player != null)
+        {
+            player.changeHP(damage);
+        }
+    }
+
     public void OnHit(int damage)
     {
         Health -= damage;
     }
 
-    private void Die()
+    public void Die()
     {
         animator.SetTrigger("IsDead");
 
@@ -102,16 +97,16 @@ public class EnemyController : MonoBehaviour , IDamageable
         StartCoroutine(DeactivateAfterDelay(1.1f));
     }
 
-    private IEnumerator DeactivateAfterDelay(float delay)
+    public void OnObjectDestroyed()
+    {
+        Destroy(gameObject);
+    }
+
+    public IEnumerator DeactivateAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
 
         // Deactivate the game object
         OnObjectDestroyed();
-    }
-
-    public void OnObjectDestroyed()
-    {
-        Destroy(gameObject);
     }
 }
