@@ -49,9 +49,6 @@ public class DamageableCharacter : MonoBehaviour
             {
                 animator.SetTrigger("Hit");
 
-                //check hp
-                Debug.Log(Health);
-
             }
 
             _hp = value;

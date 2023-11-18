@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -26,7 +23,7 @@ public class AttackHitbox : MonoBehaviour
         }
     }
 
-public void AttackAtEnemy()
+    public void AttackAtEnemy()
     {
         float facingDirection = Mathf.Sign(transform.localScale.x);
         Vector3 facingOffset = new Vector3(attkPosition.x * facingDirection, attkPosition.y, attkPosition.z);
@@ -35,18 +32,18 @@ public void AttackAtEnemy()
 
         foreach (Collider2D collision in collider)
         {
-            if (collision.GetComponent<EnemyControllerMelee>())
+            if (collision.CompareTag("Bullet"))
             {
-                collision.GetComponent<EnemyControllerMelee>().OnHit(1);
+                Destroy(collision.gameObject); // Destroy the bullet
             }
-            else if (collision.GetComponent<EnemyControllerRanged>())
+            else if (collision.GetComponent<EnemyController>())
             {
-                collision.GetComponent<EnemyControllerRanged>().OnHit(1);
+                collision.GetComponent<EnemyController>().OnHit(1);
             }
         }
     }
 
-    private void OnDrawGizmos()
+/*    private void OnDrawGizmos()
     {
 
         float facingDirection = Mathf.Sign(transform.localScale.x);
@@ -56,7 +53,8 @@ public void AttackAtEnemy()
 
         // Draw the wire cube with the adjusted position
         Gizmos.DrawWireCube(transform.position + facingOffset, boxRange);
-    }
+
+    }*/
 
 
 

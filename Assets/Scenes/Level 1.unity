@@ -4852,53 +4852,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1182919744}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1198165015
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1198165017}
-  - component: {fileID: 1198165016}
-  m_Layer: 0
-  m_Name: BulletPoolManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1198165016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198165015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c66003fa9b81945458dc8d468716a60d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 6016202111628207481, guid: 57eac007ba783f942825a72e0813acc0,
-    type: 3}
-  poolSize: 10
---- !u!4 &1198165017
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198165015}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.596174, y: 2.7183032, z: -2.8379562}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1207811997
 GameObject:
   m_ObjectHideFlags: 0
@@ -5088,7 +5041,7 @@ Transform:
   m_GameObject: {fileID: 1241209742}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.22, y: 4.82, z: -12.870323}
+  m_LocalPosition: {x: 0.42, y: 13.29, z: -12.870323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7014,7 +6967,7 @@ Transform:
   m_GameObject: {fileID: 2094669774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.22, y: 4.82, z: -12.870323}
+  m_LocalPosition: {x: 0.42, y: 13.29, z: -12.870323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14177,20 +14130,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: EvilWizard
       objectReference: {fileID: 0}
-    - target: {fileID: 3682179190371543690, guid: 6fdba3aacd3c691438445c45436a1259,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6570103918140502903, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.47
+      value: -12.54
       objectReference: {fileID: 0}
     - target: {fileID: 6570103918140502903, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.21
+      value: -0.68
       objectReference: {fileID: 0}
     - target: {fileID: 6570103918140502903, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
@@ -14250,20 +14198,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
-    - target: {fileID: 5432491407476458108, guid: df112e5904e76b340a1a9d1506a202c6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 9045900850150976543, guid: df112e5904e76b340a1a9d1506a202c6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -11.67
       objectReference: {fileID: 0}
     - target: {fileID: 9045900850150976543, guid: df112e5904e76b340a1a9d1506a202c6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.71
+      value: 5.53
       objectReference: {fileID: 0}
     - target: {fileID: 9045900850150976543, guid: df112e5904e76b340a1a9d1506a202c6,
         type: 3}
@@ -14326,12 +14269,12 @@ PrefabInstance:
     - target: {fileID: 9018008059099120122, guid: 64050254d91643445bbeb2f9eb8af222,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.22
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 9018008059099120122, guid: 64050254d91643445bbeb2f9eb8af222,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.82
+      value: 13.29
       objectReference: {fileID: 0}
     - target: {fileID: 9018008059099120122, guid: 64050254d91643445bbeb2f9eb8af222,
         type: 3}
@@ -14389,12 +14332,12 @@ PrefabInstance:
     - target: {fileID: 1393940660615453311, guid: 49878d9e5ed26bc44b4955127a566c03,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.26
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 1393940660615453311, guid: 49878d9e5ed26bc44b4955127a566c03,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.07
+      value: 17.36
       objectReference: {fileID: 0}
     - target: {fileID: 1393940660615453311, guid: 49878d9e5ed26bc44b4955127a566c03,
         type: 3}
@@ -14457,12 +14400,12 @@ PrefabInstance:
     - target: {fileID: 8443569705161725974, guid: 0402096db3650d34cbdae065680e1b08,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.93
+      value: -8.15
       objectReference: {fileID: 0}
     - target: {fileID: 8443569705161725974, guid: 0402096db3650d34cbdae065680e1b08,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.24
+      value: 9.08
       objectReference: {fileID: 0}
     - target: {fileID: 8443569705161725974, guid: 0402096db3650d34cbdae065680e1b08,
         type: 3}
@@ -14509,11 +14452,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin
       objectReference: {fileID: 0}
-    - target: {fileID: 8598000502484038637, guid: 0402096db3650d34cbdae065680e1b08,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14530,6 +14468,5 @@ SceneRoots:
   - {fileID: 6868379797690276315}
   - {fileID: 5991675638842688107}
   - {fileID: 4010496270082349195}
-  - {fileID: 4028282306378503020}
   - {fileID: 3211294394113647826}
-  - {fileID: 1198165017}
+  - {fileID: 4028282306378503020}

@@ -1,29 +1,49 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 10f;
-    
+    public float bulletLife = 1f;
+    public float speed = 1f;
+    public int damage = 1;
+
+    private Vector2 spawnPoint;
+    private float timer = 0f;
+
+    void Start()
+    {
+        spawnPoint = new Vector2(transform.position.x, transform.position.y);
+    }
+
     void Update()
     {
-        Move();
+        if (timer > bulletLife) Destroy(gameObject);
+        timer += Time.deltaTime;
+        transform.position = Movement(timer);
     }
 
-    public void Initialize(Vector3 direction)
+    private Vector2 Movement(float timer)
     {
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.velocity = direction * speed;
-
-        // You can add more customization based on your game's requirements
+        float x = timer * speed * transform.right.x;
+        float y = timer * speed * transform.right.y;
+        return new Vector2(x + spawnPoint.x, y + spawnPoint.y);
     }
 
-    void Move()
+    // OnTriggerEnter2D is called when the Collider2D other enters the trigger.
+    void OnTriggerEnter2D(Collider2D other)
     {
-
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
+        // Check the tag of the collided object
+        if (other.CompareTag("Player"))
+        {
+            // Collided with the player
+            TopDownCharacterController player = other.GetComponent<TopDownCharacterController>();
+            if (player != null)
+            {
+                player.changeHP(damage);
+            }
+            Destroy(gameObject);
+        }
 
     }
 }
