@@ -5088,7 +5088,7 @@ Transform:
   m_GameObject: {fileID: 1241209742}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.22, y: 4.82, z: -12.870323}
+  m_LocalPosition: {x: -8.03, y: 2.25, z: -12.870323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7014,7 +7014,7 @@ Transform:
   m_GameObject: {fileID: 2094669774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.22, y: 4.82, z: -12.870323}
+  m_LocalPosition: {x: -8.03, y: 2.25, z: -12.870323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14177,20 +14177,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: EvilWizard
       objectReference: {fileID: 0}
-    - target: {fileID: 3682179190371543690, guid: 6fdba3aacd3c691438445c45436a1259,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6570103918140502903, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.47
+      value: -12.91
       objectReference: {fileID: 0}
     - target: {fileID: 6570103918140502903, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.21
+      value: -0.6399996
       objectReference: {fileID: 0}
     - target: {fileID: 6570103918140502903, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
@@ -14250,20 +14245,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
-    - target: {fileID: 5432491407476458108, guid: df112e5904e76b340a1a9d1506a202c6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 9045900850150976543, guid: df112e5904e76b340a1a9d1506a202c6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -12.29
       objectReference: {fileID: 0}
     - target: {fileID: 9045900850150976543, guid: df112e5904e76b340a1a9d1506a202c6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.71
+      value: 6.42
       objectReference: {fileID: 0}
     - target: {fileID: 9045900850150976543, guid: df112e5904e76b340a1a9d1506a202c6,
         type: 3}
@@ -14326,12 +14316,12 @@ PrefabInstance:
     - target: {fileID: 9018008059099120122, guid: 64050254d91643445bbeb2f9eb8af222,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.22
+      value: -8.03
       objectReference: {fileID: 0}
     - target: {fileID: 9018008059099120122, guid: 64050254d91643445bbeb2f9eb8af222,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.82
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 9018008059099120122, guid: 64050254d91643445bbeb2f9eb8af222,
         type: 3}
@@ -14389,12 +14379,12 @@ PrefabInstance:
     - target: {fileID: 1393940660615453311, guid: 49878d9e5ed26bc44b4955127a566c03,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.26
+      value: -12.32
       objectReference: {fileID: 0}
     - target: {fileID: 1393940660615453311, guid: 49878d9e5ed26bc44b4955127a566c03,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.07
+      value: 2.65
       objectReference: {fileID: 0}
     - target: {fileID: 1393940660615453311, guid: 49878d9e5ed26bc44b4955127a566c03,
         type: 3}
@@ -14457,12 +14447,12 @@ PrefabInstance:
     - target: {fileID: 8443569705161725974, guid: 0402096db3650d34cbdae065680e1b08,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.93
+      value: -12.18
       objectReference: {fileID: 0}
     - target: {fileID: 8443569705161725974, guid: 0402096db3650d34cbdae065680e1b08,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.24
+      value: 4.3900003
       objectReference: {fileID: 0}
     - target: {fileID: 8443569705161725974, guid: 0402096db3650d34cbdae065680e1b08,
         type: 3}
@@ -14509,11 +14499,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin
       objectReference: {fileID: 0}
-    - target: {fileID: 8598000502484038637, guid: 0402096db3650d34cbdae065680e1b08,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14530,6 +14515,6 @@ SceneRoots:
   - {fileID: 6868379797690276315}
   - {fileID: 5991675638842688107}
   - {fileID: 4010496270082349195}
-  - {fileID: 4028282306378503020}
   - {fileID: 3211294394113647826}
+  - {fileID: 4028282306378503020}
   - {fileID: 1198165017}

@@ -5,20 +5,18 @@ public class EnemyControllerMelee : MonoBehaviour
 {
     public int damage;
     public float speed;
+    public float changeTime = 3.0f;
     private Animator animator;
     public int _hp;
     Rigidbody2D rigidbody2d;
     float timer;
     int direction;
 
-    private SpriteRenderer spriteRenderer;
-
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
+        timer = changeTime;
     }
 
     void Update()
@@ -28,13 +26,16 @@ public class EnemyControllerMelee : MonoBehaviour
         if (timer < 0)
         {
             direction = -direction;
+            timer = changeTime;
         }
     }
 
     void FixedUpdate()
     {
         Vector2 position = rigidbody2d.position;
+
         position.x = position.x + Time.deltaTime * speed * direction;
+
         rigidbody2d.MovePosition(position);
     }
 
