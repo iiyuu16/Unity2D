@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class EnemyControllerMelee : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     public int damage;
     public float speed;

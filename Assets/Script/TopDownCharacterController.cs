@@ -8,6 +8,7 @@ public class TopDownCharacterController : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rigidbody2d;
     private bool canAttack = true;
+    private bool isAttacking = false;
     public float attackCooldown = 1.0f;
     private float timeSinceAttack = 0.0f;
 
@@ -45,7 +46,10 @@ public class TopDownCharacterController : MonoBehaviour
     private void Update()
     {
         HandleMovement();
-        HandleAttack();
+
+        if (!isAttacking) { 
+            HandleAttack();
+        }
 
         if (isInvincible)
         {
@@ -71,7 +75,6 @@ public class TopDownCharacterController : MonoBehaviour
                     Debug.Log("Invincible: " + isInvincible);
                     InvincibleLogTimer = 0f;
                 }*/
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -135,6 +138,12 @@ public class TopDownCharacterController : MonoBehaviour
         timeSinceAttack += Time.deltaTime;
     }
 
+    public void StartAttack()
+    {
+        isAttacking = true;
+        rigidbody2d.velocity = Vector2.zero;
+        isAttacking = false;
+    }
     public void changeHP(int amnt)
     {
         if (!isInvincible)
