@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TopDownCharacterController : MonoBehaviour
@@ -11,6 +12,7 @@ public class TopDownCharacterController : MonoBehaviour
     private bool isAttacking = false;
     public float attackCooldown = 1.0f;
     private float timeSinceAttack = 0.0f;
+    private bool canMove = true;
 
     //fps
     private int fps = 120;
@@ -148,22 +150,19 @@ public class TopDownCharacterController : MonoBehaviour
     {
         if (!isInvincible)
         {
-            //currentHP = Mathf.Clamp(currentHP + amnt, 0, maxHP);
             currentHP -= amnt;
 
-        if (currentHP <= 0)
-        {
-            Die();
+            if (currentHP <= 0)
+            {
+                Die();
+            }
+            else
+            {
+                animator.SetTrigger("Hit");
+                isInvincible = true;
+                invincibleTimer = timeInvincible;
+            }
         }
-        else
-        {
-            animator.SetTrigger("Hit");
-            isInvincible = true;
-            invincibleTimer = timeInvincible;
-        }
-
-        }
-   
     }
 
     private void Die()
