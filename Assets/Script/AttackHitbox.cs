@@ -43,8 +43,11 @@ public class AttackHitbox : MonoBehaviour
         }
     }
 
+    //uncomment gizmo for debugging hitbox
 /*    private void OnDrawGizmos()
     {
+
+        Gizmos.color = Color.red;
 
         float facingDirection = Mathf.Sign(transform.localScale.x);
 
@@ -55,7 +58,5 @@ public class AttackHitbox : MonoBehaviour
         Gizmos.DrawWireCube(transform.position + facingOffset, boxRange);
 
     }*/
-
-
 
 }
