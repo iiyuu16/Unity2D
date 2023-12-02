@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour
     private Animator animator;
     public int _hp;
     private Rigidbody2D rigidbody2d;
-    private Collider2D collider;
+    public new Collider2D collider;
     private bool playerInAttackZone = false;
     private bool canAttack = true;
 

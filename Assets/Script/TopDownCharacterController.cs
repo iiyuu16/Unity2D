@@ -15,7 +15,7 @@ public class TopDownCharacterController : MonoBehaviour
 
     //health
     public float speed;
-    public int maxHP = 3;
+    public int maxHP = 5;
     public int currentHP;
     public int HP { get { return currentHP; } }
 
@@ -52,13 +52,11 @@ public class TopDownCharacterController : MonoBehaviour
         {
             invincibleTimer -= Time.deltaTime;
 
-            // Flash the player white during the invincible period
             FlashPlayer();
 
             if (invincibleTimer < 0)
             {
                 isInvincible = false;
-                // Ensure the player is visible and not blinking after invincibility ends
                 SetPlayerVisible(true);
             }
         }
@@ -89,16 +87,12 @@ public class TopDownCharacterController : MonoBehaviour
 
         Vector2 movement = new Vector2(horizontalInput, verticalInput).normalized;
 
-        // Move the player
         rigidbody2d.velocity = new Vector2(movement.x * speed, movement.y * speed);
 
-        // Set animation parameters
         if (movement.magnitude > 0)
         {
-            // Player is moving
             animator.SetBool("IsRunning", true);
 
-            // Flip sprite based on movement direction
             if (movement.x > 0)
             {
                 transform.localScale = new Vector3(4, 4, 4);
@@ -110,7 +104,6 @@ public class TopDownCharacterController : MonoBehaviour
         }
         else
         {
-            // Player is not moving
             animator.SetBool("IsRunning", false);
         }
     }
@@ -119,41 +112,33 @@ public class TopDownCharacterController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && canAttack)
         {
-            // Set the trigger for attack animation
             animator.SetTrigger("Attack");
 
-            // Set attack on cooldown
             canAttack = false;
             timeSinceAttack = 0.0f;
 
-            // Start the cooldown coroutine
             StartCoroutine(AttackCooldown());
         }
 
-        // Update the time since last attack
         timeSinceAttack += Time.deltaTime;
     }
 
     private void FlashPlayer()
     {
-        // Flash the player white by changing the sprite renderer color
         float blinkSpeed = 0.1f;
 
         if (Mathf.PingPong(Time.time / blinkSpeed, 1) > 0.5f)
         {
-            // Player is visible
             SetPlayerVisible(true);
         }
         else
         {
-            // Player is invisible
             SetPlayerVisible(false);
         }
     }
 
     private void SetPlayerVisible(bool isVisible)
     {
-        // Assuming your player sprite is a child object, you may need to adapt this based on your hierarchy
         SpriteRenderer playerSprite = GetComponentInChildren<SpriteRenderer>();
 
         if (playerSprite != null)
@@ -190,13 +175,10 @@ public class TopDownCharacterController : MonoBehaviour
 
     private void Die()
     {
-        // Disable the script to prevent further updates
         enabled = false;
 
-        // Trigger death animation
         animator.SetTrigger("IsDead");
 
-        // Deactivate the game object after a delay
         StartCoroutine(DeactivateAfterDelay(1.2f));
     }
 

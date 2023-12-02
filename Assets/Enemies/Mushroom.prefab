@@ -46,9 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 6016202111628207481, guid: 57eac007ba783f942825a72e0813acc0, type: 3}
   bulletLife: 3
-  speed: 2
+  speed: 1
   spawnerType: 1
-  initialFiringRate: 0.1
+  initialFiringRate: 0.6
 --- !u!1 &8625404278585006449
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,13 +147,13 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8625404278585006449}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.01
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -219,7 +219,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0059189647, y: -0.12046159}
+  m_Offset: {x: 0.00072201714, y: -0.12046158}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -230,7 +230,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15090427, y: 0.27732682}
+  m_Size: {x: 0.22148472, y: 0.27732682}
   m_EdgeRadius: 0
 --- !u!114 &9207611356972943034
 MonoBehaviour:
@@ -244,7 +244,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d98b499687d0e48984e988cdb65a53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchDamage: 0
+  touchDamage: 1
   damage: 1
   _hp: 5
+  collider: {fileID: 1938349214284177400}
   _targetable: 1

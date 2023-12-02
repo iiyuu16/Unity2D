@@ -23,7 +23,8 @@ public class HPDisplay : MonoBehaviour
         // Update the TextMeshPro Text with current and max HP
         if (player != null)
         {
-            hpText.text ="Life: "+ player.currentHP + "/" + player.maxHP;
+            hpText.text ="Life" +
+                " "+ player.currentHP + "/" + player.maxHP;
         }
         else
         {

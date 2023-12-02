@@ -11,8 +11,8 @@ public class HPCollectible : MonoBehaviour
         TopDownCharacterController player = other.GetComponent<TopDownCharacterController>();
 
         if (player != null){
-            if (player.HP < player.maxHP) {
-                player.changeHP(+1);
+            if (player.currentHP < player.maxHP) {
+                player.currentHP = player.currentHP + 1;
                 Destroy(gameObject);
             }
         }
