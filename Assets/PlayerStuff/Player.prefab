@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 1
   speed: 3
-  maxHP: 3
+  maxHP: 10
   currentHP: 0
   timeInvincible: 3
 --- !u!212 &3066441370393857495

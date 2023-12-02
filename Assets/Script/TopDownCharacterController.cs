@@ -1,7 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class TopDownCharacterController : MonoBehaviour
@@ -12,7 +9,6 @@ public class TopDownCharacterController : MonoBehaviour
     private bool isAttacking = false;
     public float attackCooldown = 1.0f;
     private float timeSinceAttack = 0.0f;
-    private bool canMove = true;
 
     //fps
     private int fps = 120;
@@ -24,15 +20,13 @@ public class TopDownCharacterController : MonoBehaviour
     public int HP { get { return currentHP; } }
 
     //iFrames
-    public float timeInvincible = 3.0f;
+    public float timeInvincible = 1.5f;
     private bool isInvincible;
     private float invincibleTimer = 0;
 
     //status check
     private float HPLogTimer = 0f;
     private float HPLogInterval = 1.0f;
-    /*    private float InvincibleLogTimer = 0f;
-        private float InvincibleLogInterval = 1.0f;*/
 
     private void Start()
     {
@@ -49,16 +43,23 @@ public class TopDownCharacterController : MonoBehaviour
     {
         HandleMovement();
 
-        if (!isAttacking) { 
+        if (!isAttacking)
+        {
             HandleAttack();
         }
 
         if (isInvincible)
         {
             invincibleTimer -= Time.deltaTime;
+
+            // Flash the player white during the invincible period
+            FlashPlayer();
+
             if (invincibleTimer < 0)
             {
                 isInvincible = false;
+                // Ensure the player is visible and not blinking after invincibility ends
+                SetPlayerVisible(true);
             }
         }
 
@@ -70,13 +71,6 @@ public class TopDownCharacterController : MonoBehaviour
             Debug.Log("HP: " + currentHP + "/" + maxHP);
             HPLogTimer = 0f;
         }
-        //invincibility
-        /*        InvincibleLogTimer += Time.deltaTime;
-                if (InvincibleLogTimer >= InvincibleLogInterval)
-                {
-                    Debug.Log("Invincible: " + isInvincible);
-                    InvincibleLogTimer = 0f;
-                }*/
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -140,12 +134,41 @@ public class TopDownCharacterController : MonoBehaviour
         timeSinceAttack += Time.deltaTime;
     }
 
+    private void FlashPlayer()
+    {
+        // Flash the player white by changing the sprite renderer color
+        float blinkSpeed = 0.1f;
+
+        if (Mathf.PingPong(Time.time / blinkSpeed, 1) > 0.5f)
+        {
+            // Player is visible
+            SetPlayerVisible(true);
+        }
+        else
+        {
+            // Player is invisible
+            SetPlayerVisible(false);
+        }
+    }
+
+    private void SetPlayerVisible(bool isVisible)
+    {
+        // Assuming your player sprite is a child object, you may need to adapt this based on your hierarchy
+        SpriteRenderer playerSprite = GetComponentInChildren<SpriteRenderer>();
+
+        if (playerSprite != null)
+        {
+            playerSprite.enabled = isVisible;
+        }
+    }
+
     public void StartAttack()
     {
         isAttacking = true;
         rigidbody2d.velocity = Vector2.zero;
         isAttacking = false;
     }
+
     public void changeHP(int amnt)
     {
         if (!isInvincible)
@@ -193,5 +216,4 @@ public class TopDownCharacterController : MonoBehaviour
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
     }
-
 }

@@ -3,40 +3,53 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public int touchDamage;
     public int damage;
-    public float speed;
-    public float changeTime = 3.0f;
     private Animator animator;
     public int _hp;
-    Rigidbody2D rigidbody2d;
-    float timer;
-    int direction;
+    private Rigidbody2D rigidbody2d;
+    private Collider2D collider;
+    private bool playerInAttackZone = false;
+    private bool canAttack = true;
 
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        timer = changeTime;
+        collider = GetComponent<Collider2D>();
     }
 
     void Update()
     {
-        timer -= Time.deltaTime;
-
-        if (timer < 0)
+        if (playerInAttackZone && canAttack)
         {
-            direction = -direction;
-            timer = changeTime;
+            AttackPlayer();
         }
     }
 
-    void FixedUpdate()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Vector2 position = rigidbody2d.position;
+        if (other.CompareTag("Player"))
+        {
+            playerInAttackZone = true;
+            Debug.Log("entered");
+        }
+    }
 
-        position.x = position.x + Time.deltaTime * speed * direction;
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInAttackZone = false;
+            Debug.Log("exited");
+            canAttack = true;
+        }
+    }
 
-        rigidbody2d.MovePosition(position);
+    void AttackPlayer()
+    {
+        animator.SetTrigger("Attack");
+        canAttack = false;
     }
 
     public int Health
@@ -46,7 +59,6 @@ public class EnemyController : MonoBehaviour
             if (value < _hp)
             {
                 animator.SetTrigger("Hit");
-
             }
 
             _hp = value;
@@ -62,6 +74,7 @@ public class EnemyController : MonoBehaviour
             return _hp;
         }
     }
+
     public bool Targetable
     {
         get { return _targetable; }
@@ -69,18 +82,17 @@ public class EnemyController : MonoBehaviour
         {
             _targetable = value;
             rigidbody2d.simulated = value;
+            collider.enabled = value;
         }
     }
     public bool _targetable = true;
-
-
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         TopDownCharacterController player = collision.collider.gameObject.GetComponent<TopDownCharacterController>();
         if (player != null)
         {
-            player.changeHP(damage);
+            player.changeHP(touchDamage);
         }
     }
 
@@ -93,9 +105,7 @@ public class EnemyController : MonoBehaviour
     {
         animator.SetTrigger("IsDead");
 
-
-        // Deactivate the game object after a delay
-        StartCoroutine(DeactivateAfterDelay(1.1f));
+        StartCoroutine(DeactivateAfterDelay(1.0f));
     }
 
     public void OnObjectDestroyed()
@@ -107,7 +117,6 @@ public class EnemyController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        // Deactivate the game object
         OnObjectDestroyed();
     }
 }

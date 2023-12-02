@@ -6,13 +6,13 @@ using UnityEngine;
 public class HealZone : MonoBehaviour
 {
     private TopDownCharacterController player;
-    private float healingTime = 5.0f;
+    private float healingTime = 3.0f;
     private bool isHealing = false;
     private float healingTimer = 0.0f;
 
     private void Update() {
         if (isHealing) {
-            if (player.currentHP < 3)
+            if (player.currentHP < player.maxHP)
             {
                 healingTimer += Time.deltaTime;
 
