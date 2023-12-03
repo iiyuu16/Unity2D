@@ -1,26 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class FPS : MonoBehaviour
 {
-    private int fps = 30;
+    public TMP_Text fpsText;
+    public TMP_Dropdown fpsDropdown;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = fps;
+    void Start()
+    {   
+        fpsDropdown.onValueChanged.AddListener(OnFpsDropdownValueChanged);
+
+        UpdateFpsText();
     }
 
-    // Update is called once per frame
+    void OnFpsDropdownValueChanged(int value)
+    {
+        UpdateFpsText();
+
+        ChangeFrameRate(value);
+    }
+
+    void UpdateFpsText()
+    {
+        int selectedFps = GetSelectedFps();
+
+        fpsText.text = $"FPS: {selectedFps}";
+    }
+
+    int GetSelectedFps()
+    {
+        return int.Parse(fpsDropdown.options[fpsDropdown.value].text);
+    }
+
     public void ChangeFrameRate(int selection)
     {
         switch (selection)
         {
             case 0:
-                Application.targetFrameRate = fps; break;
+                Application.targetFrameRate = 30; break;
             case 1:
                 Application.targetFrameRate = 60; break;
             case 2:

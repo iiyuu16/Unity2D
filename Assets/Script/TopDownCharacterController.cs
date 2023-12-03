@@ -20,7 +20,7 @@ public class TopDownCharacterController : MonoBehaviour
     public int HP { get { return currentHP; } }
 
     //iFrames
-    public float timeInvincible = 1.5f;
+    public float timeInvincible = 0.5f;
     private bool isInvincible;
     private float invincibleTimer = 0;
 

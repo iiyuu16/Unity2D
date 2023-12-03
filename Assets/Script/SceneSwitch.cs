@@ -21,6 +21,11 @@ public class SceneSwitch : MonoBehaviour
         Application.Quit();
     }
 
+    public void ResetStage()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     //Level1 to MainMenu
     public void LVL1toMainMenu()
     {
