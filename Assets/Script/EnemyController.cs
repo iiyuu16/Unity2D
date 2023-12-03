@@ -15,6 +15,10 @@ public class EnemyController : MonoBehaviour
     private bool canAttack = true;
     public Slider hpBar;
 
+    public AudioSource hit;
+    public AudioSource death;
+    public AudioSource attack;
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -61,7 +65,7 @@ public class EnemyController : MonoBehaviour
     {
         animator.SetTrigger("Attack");
         canAttack = false;
-        SoundManager.PlaySound("hit");
+        attack.Play();
     }
 
     public int Health
@@ -117,13 +121,13 @@ public class EnemyController : MonoBehaviour
     public void OnHit(int damage)
     {
         Health -= damage;
-        SoundManager.PlaySound("hit");
+        hit.Play();
     }
 
     public void Die()
     {
         animator.SetTrigger("IsDead");
-        SoundManager.PlaySound("death");
+        death.Play();
 
         StartCoroutine(DeactivateAfterDelay(1.0f));
     }

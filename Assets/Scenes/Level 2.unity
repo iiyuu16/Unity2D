@@ -196,6 +196,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -280,6 +295,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5644,6 +5674,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6152,6 +6197,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6896,6 +6956,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8102,6 +8177,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8192,6 +8282,134 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 445435492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &507817144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 507817146}
+  - component: {fileID: 507817145}
+  m_Layer: 0
+  m_Name: DeathSFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &507817145
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507817144}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4f5bc64a69b9741b49c08897fbf40c67, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &507817146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507817144}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 22.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &511265064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8947,6 +9165,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9851,6 +10084,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10264,6 +10512,134 @@ Transform:
   - {fileID: 1058879891}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &915113406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 915113408}
+  - component: {fileID: 915113407}
+  m_Layer: 0
+  m_Name: AttackSFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &915113407
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915113406}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3dc7d265f9c42437492a59228fc7b6d7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &915113408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915113406}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 22.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &930885048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10348,9 +10724,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
+        type: 3}
       propertyPath: maxHP
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     - target: {fileID: 515564292061598934, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -11278,9 +11669,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
+        type: 3}
       propertyPath: maxHP
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     - target: {fileID: 515564292061598934, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -11511,6 +11917,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11914,6 +12335,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11925,6 +12361,134 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1149294763}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1158927162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1158927164}
+  - component: {fileID: 1158927163}
+  m_Layer: 0
+  m_Name: HitSFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1158927163
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158927162}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 17f00446e6dfe407b8daab80e8cb5b6c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1158927164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158927162}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 22.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1166104565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12620,6 +13184,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12704,6 +13283,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12956,6 +13550,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13479,6 +14088,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13976,6 +14600,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14139,6 +14778,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14158,6 +14812,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3830069126208043069, guid: 64050254d91643445bbeb2f9eb8af222,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 3830069126208043069, guid: 64050254d91643445bbeb2f9eb8af222,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 3830069126208043069, guid: 64050254d91643445bbeb2f9eb8af222,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     - target: {fileID: 8310498203198660915, guid: 64050254d91643445bbeb2f9eb8af222,
         type: 3}
       propertyPath: m_Name
@@ -29987,6 +30656,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30219,6 +30903,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30765,9 +31464,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
+        type: 3}
       propertyPath: maxHP
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 386149077257741619, guid: 6fdba3aacd3c691438445c45436a1259,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     - target: {fileID: 515564292061598934, guid: 6fdba3aacd3c691438445c45436a1259,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -30934,12 +31648,12 @@ PrefabInstance:
     - target: {fileID: 6526810801777781353, guid: 8e06d42b1a14a0e4aa1a14ca0cbbac90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.25
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 6526810801777781353, guid: 8e06d42b1a14a0e4aa1a14ca0cbbac90,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.03
+      value: 32.02
       objectReference: {fileID: 0}
     - target: {fileID: 6526810801777781353, guid: 8e06d42b1a14a0e4aa1a14ca0cbbac90,
         type: 3}
@@ -31065,6 +31779,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32341,6 +33070,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32621,6 +33365,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32789,6 +33548,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32873,6 +33647,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33468,6 +34257,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33926,6 +34730,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 1158927163}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 507817145}
+    - target: {fileID: 9207611356972943034, guid: 49878d9e5ed26bc44b4955127a566c03,
+        type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 915113407}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34279,3 +35098,6 @@ SceneRoots:
   - {fileID: 1405128098}
   - {fileID: 2097052831}
   - {fileID: 1798536285}
+  - {fileID: 915113408}
+  - {fileID: 1158927164}
+  - {fileID: 507817146}

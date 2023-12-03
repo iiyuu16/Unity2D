@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip hit, death, shoot;
+    public static AudioClip hit, death, attack;
     static AudioSource audioSrc;
     [SerializeField] Slider volSlider;
     // Start is called before the first frame update
@@ -13,7 +13,7 @@ public class SoundManager : MonoBehaviour
     {
         hit = Resources.Load<AudioClip>("Hit");
         death = Resources.Load<AudioClip>("Death");
-        shoot = Resources.Load<AudioClip>("Shoot");
+        attack = Resources.Load<AudioClip>("Attack");
 
         audioSrc = GetComponent<AudioSource>();
 
@@ -29,25 +29,21 @@ public class SoundManager : MonoBehaviour
 
     }
 
-    public static void PlaySound(string clip) 
+    public static void PlaySound(string clip)
     {
         switch (clip)
         {
             case "Hit":
                 audioSrc.PlayOneShot(hit);
                 break;
-            case "death":
+            case "Death":
                 audioSrc.PlayOneShot(death);
                 break;
-            case "shoot":
-                audioSrc.PlayOneShot(shoot);
+            case "Attack":
+                audioSrc.PlayOneShot(attack);
                 break;
         }
     }
-
-
-
-
     public void changeVolume()
     {
         AudioListener.volume = volSlider.value;

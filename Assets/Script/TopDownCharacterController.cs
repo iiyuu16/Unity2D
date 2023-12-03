@@ -11,7 +11,7 @@ public class TopDownCharacterController : MonoBehaviour
     private float timeSinceAttack = 0.0f;
 
     //fps
-    private int fps = 120;
+    private int fps = 30;
 
     //health
     public float speed;
@@ -27,6 +27,10 @@ public class TopDownCharacterController : MonoBehaviour
     //status check
     private float HPLogTimer = 0f;
     private float HPLogInterval = 1.0f;
+
+    public AudioSource hit;
+    public AudioSource death;
+    public AudioSource attack;
 
     private void Start()
     {
@@ -113,7 +117,7 @@ public class TopDownCharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && canAttack)
         {
             animator.SetTrigger("Attack");
-            SoundManager.PlaySound("hit");
+            attack.Play(); // Play attack sound
             canAttack = false;
             timeSinceAttack = 0.0f;
 
@@ -167,7 +171,7 @@ public class TopDownCharacterController : MonoBehaviour
             else
             {
                 animator.SetTrigger("Hit");
-                SoundManager.PlaySound("hit");
+                hit.Play(); // Play hit sound
                 isInvincible = true;
                 invincibleTimer = timeInvincible;
             }
@@ -179,7 +183,7 @@ public class TopDownCharacterController : MonoBehaviour
         enabled = false;
 
         animator.SetTrigger("IsDead");
-        SoundManager.PlaySound("death");
+        death.Play(); // Play death sound
 
         StartCoroutine(DeactivateAfterDelay(1.2f));
     }
