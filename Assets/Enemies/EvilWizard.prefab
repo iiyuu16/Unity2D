@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 1383540285801261432}
   - component: {fileID: 4430334604493681213}
   - component: {fileID: 386149077257741619}
+  - component: {fileID: 140667666804961362}
+  - component: {fileID: 7498925464742168873}
   m_Layer: 10
   m_Name: EvilWizard
   m_TagString: Enemy
@@ -36,6 +38,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8013731932953599596}
+  - {fileID: 9161971267309596147}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6673902878427872365
@@ -171,7 +174,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010900259, y: -0.065748096}
+  m_Offset: {x: 0.0931226, y: -0.065748096}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -182,7 +185,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14134836, y: 0.37003016}
+  m_Size: {x: 0.35, y: 0.37003016}
   m_EdgeRadius: 0
 --- !u!114 &4430334604493681213
 MonoBehaviour:
@@ -215,6 +218,82 @@ MonoBehaviour:
   _hp: 12
   collider: {fileID: 7280892549136169638}
   _targetable: 1
+--- !u!114 &140667666804961362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3682179190371543690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60abdd2d13b0c24fa24cc3f5a7e9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateEvery: 5
+  secondsToFlip: 0.25
+--- !u!114 &7498925464742168873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3682179190371543690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fd4725f20b9cb488d84edeb0a1b2f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDisable: {fileID: 0}
+--- !u!1 &7103659362686876318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9161971267309596147}
+  - component: {fileID: 3083509232287019923}
+  m_Layer: 10
+  m_Name: WizardBulletPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9161971267309596147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103659362686876318}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6570103918140502903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3083509232287019923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103659362686876318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66003fa9b81945458dc8d468716a60d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 6016202111628207481, guid: 57eac007ba783f942825a72e0813acc0, type: 3}
+  bulletLife: 4
+  speed: 2
+  spawnerType: 1
+  initialFiringRate: 0.25
 --- !u!1 &9165907151225913242
 GameObject:
   m_ObjectHideFlags: 0
