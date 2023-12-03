@@ -113,7 +113,7 @@ public class TopDownCharacterController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && canAttack)
         {
             animator.SetTrigger("Attack");
-
+            SoundManager.PlaySound("hit");
             canAttack = false;
             timeSinceAttack = 0.0f;
 
@@ -167,6 +167,7 @@ public class TopDownCharacterController : MonoBehaviour
             else
             {
                 animator.SetTrigger("Hit");
+                SoundManager.PlaySound("hit");
                 isInvincible = true;
                 invincibleTimer = timeInvincible;
             }
@@ -178,6 +179,7 @@ public class TopDownCharacterController : MonoBehaviour
         enabled = false;
 
         animator.SetTrigger("IsDead");
+        SoundManager.PlaySound("death");
 
         StartCoroutine(DeactivateAfterDelay(1.2f));
     }

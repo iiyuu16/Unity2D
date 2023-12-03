@@ -12,7 +12,7 @@ public class SceneSwitch : MonoBehaviour
     public void NextScene()
     {
         Debug.Log("Play");
-        StartCoroutine(DelayedLoadScene());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void Quit()
@@ -29,22 +29,13 @@ public class SceneSwitch : MonoBehaviour
     //Level1 to MainMenu
     public void LVL1toMainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("MainMenu");
     }
-
 
     //Level2 to MainMenu
     public void LVL2toMainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
-    }
-
-
-    IEnumerator DelayedLoadScene()
-    {
-        yield return new WaitForSeconds(1.5f);
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("MainMenu");
     }
 
     void OnTriggerEnter2D(Collider2D other)

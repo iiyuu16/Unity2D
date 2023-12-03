@@ -41,6 +41,7 @@ public class Bullet : MonoBehaviour
             if (player != null)
             {
                 player.changeHP(damage);
+                SoundManager.PlaySound("shoot");
             }
             Destroy(gameObject);
         }

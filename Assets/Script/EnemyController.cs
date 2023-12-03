@@ -1,22 +1,32 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
     public int touchDamage;
     public int damage;
     private Animator animator;
-    public int _hp;
+    public int maxHP;
+    private int _hp;
     private Rigidbody2D rigidbody2d;
     public new Collider2D collider;
     private bool playerInAttackZone = false;
     private bool canAttack = true;
+    public Slider hpBar;
 
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         collider = GetComponent<Collider2D>();
+        _hp = maxHP;
+
+        if (hpBar != null)
+        {
+            hpBar.maxValue = maxHP;
+            hpBar.value = _hp;
+        }
     }
 
     void Update()
@@ -24,6 +34,7 @@ public class EnemyController : MonoBehaviour
         if (playerInAttackZone && canAttack)
         {
             AttackPlayer();
+
         }
     }
 
@@ -50,6 +61,7 @@ public class EnemyController : MonoBehaviour
     {
         animator.SetTrigger("Attack");
         canAttack = false;
+        SoundManager.PlaySound("hit");
     }
 
     public int Health
@@ -62,6 +74,12 @@ public class EnemyController : MonoBehaviour
             }
 
             _hp = value;
+
+            // Update HP bar value
+            if (hpBar != null)
+            {
+                hpBar.value = _hp;
+            }
 
             if (_hp <= 0)
             {
@@ -99,11 +117,13 @@ public class EnemyController : MonoBehaviour
     public void OnHit(int damage)
     {
         Health -= damage;
+        SoundManager.PlaySound("hit");
     }
 
     public void Die()
     {
         animator.SetTrigger("IsDead");
+        SoundManager.PlaySound("death");
 
         StartCoroutine(DeactivateAfterDelay(1.0f));
     }

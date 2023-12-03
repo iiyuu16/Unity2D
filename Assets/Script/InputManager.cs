@@ -4,6 +4,11 @@ public class InputManager : MonoBehaviour
 {
     public GameObject pauseMenu;
     private bool isPaused = false;
+    void Start()
+    {
+        TogglePause();
+        TogglePause();
+    }
 
     void Update()
     {
