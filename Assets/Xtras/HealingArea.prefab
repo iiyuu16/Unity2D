@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2954148452475054736}
   m_Layer: 20
   m_Name: HealingArea
-  m_TagString: Untagged
+  m_TagString: HealZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
