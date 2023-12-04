@@ -405,7 +405,10 @@ MonoBehaviour:
   damage: 1
   maxHP: 15
   collider: {fileID: 7280892549136169638}
-  hpBar: {fileID: 0}
+  hpBar: {fileID: 507520754635144858}
+  hit: {fileID: 0}
+  death: {fileID: 0}
+  attack: {fileID: 0}
   _targetable: 1
 --- !u!114 &140667666804961362
 MonoBehaviour:

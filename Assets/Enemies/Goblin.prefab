@@ -470,6 +470,7 @@ GameObject:
   - component: {fileID: 3498835152370951039}
   - component: {fileID: 5405292163078783412}
   - component: {fileID: 3411853663952023868}
+  - component: {fileID: 6455073495894429134}
   m_Layer: 10
   m_Name: Goblin
   m_TagString: Enemy
@@ -671,6 +672,9 @@ MonoBehaviour:
   maxHP: 3
   collider: {fileID: 47490158260854674}
   hpBar: {fileID: 2556271121109119477}
+  hit: {fileID: 0}
+  death: {fileID: 0}
+  attack: {fileID: 0}
   _targetable: 1
 --- !u!114 &3411853663952023868
 MonoBehaviour:
@@ -687,3 +691,17 @@ MonoBehaviour:
   slider: {fileID: 2556271121109119477}
   target: {fileID: 8443569705161725974}
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &6455073495894429134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598000502484038637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60abdd2d13b0c24fa24cc3f5a7e9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateEvery: 15
+  secondsToFlip: 0.25

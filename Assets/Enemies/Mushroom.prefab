@@ -441,6 +441,7 @@ GameObject:
   - component: {fileID: 1938349214284177400}
   - component: {fileID: 9207611356972943034}
   - component: {fileID: 8991169154437076907}
+  - component: {fileID: 1000217679623400217}
   m_Layer: 10
   m_Name: Mushroom
   m_TagString: Enemy
@@ -628,6 +629,9 @@ MonoBehaviour:
   maxHP: 4
   collider: {fileID: 1938349214284177400}
   hpBar: {fileID: 4948930856370625154}
+  hit: {fileID: 0}
+  death: {fileID: 0}
+  attack: {fileID: 0}
   _targetable: 1
 --- !u!114 &8991169154437076907
 MonoBehaviour:
@@ -644,3 +648,17 @@ MonoBehaviour:
   slider: {fileID: 4948930856370625154}
   target: {fileID: 1393940660615453311}
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1000217679623400217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8625404278585006449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60abdd2d13b0c24fa24cc3f5a7e9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateEvery: 10
+  secondsToFlip: 0.25

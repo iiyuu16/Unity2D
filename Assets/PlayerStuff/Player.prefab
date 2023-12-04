@@ -54,6 +54,9 @@ MonoBehaviour:
   maxHP: 5
   currentHP: 0
   timeInvincible: 3
+  hit: {fileID: 0}
+  death: {fileID: 0}
+  attack: {fileID: 0}
 --- !u!212 &3066441370393857495
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94,7 +97,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1869315837
   m_SortingLayer: 1
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -3318188226485093758, guid: ae72133dacba6ec4eb33ecde48f50e56,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

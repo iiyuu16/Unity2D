@@ -11,7 +11,7 @@ public class TopDownCharacterController : MonoBehaviour
     private float timeSinceAttack = 0.0f;
 
     //fps
-    private int fps = 30;
+    private int fps = 60;
 
     //health
     public float speed;
