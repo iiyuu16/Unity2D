@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject gameOverScreen;
     public TopDownCharacterController player;
+    public SceneSwitch sceneSwitch;
 
     void Start()
     {
@@ -47,6 +47,6 @@ public class GameManager : MonoBehaviour
     {
         // Reload the current scene to restart the game
         Time.timeScale = 1; // Ensure time scale is reset
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        sceneSwitch.ResetStage();
     }
 }
